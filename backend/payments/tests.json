@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "name": "Deposit funds",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "action": "deposit",
+        "user_id": "1",
+        "amount": 1000
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
